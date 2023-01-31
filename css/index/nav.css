@@ -1,0 +1,103 @@
+.nav {
+  max-width: 1344px;
+  margin: auto;
+  padding: 48px;
+
+  background: #fbf9f8;
+}
+.nav > .title {
+  font-size: 3.6rem;
+  font-weight: normal;
+}
+.nav > .title:after {
+  display: block;
+
+  width: 40px;
+  height: 4px;
+  margin-top: 20px;
+
+  content: "";
+
+  background: #c74634;
+}
+.intro {
+  margin: 24px 0;
+}
+.intro h3 {
+  font-size: 28px;
+}
+.intro a {
+  font-size: 1.6rem;
+
+  color: #00688c;
+}
+.intro > p {
+  font-size: 1.4rem;
+
+  margin-top: 1.6rem;
+}
+.drawer {
+  padding: 6px 0;
+
+  border-radius: 4px;
+  background-color: #e4e1ddd6;
+}
+.drawer > li {
+  font-size: 1.4rem;
+
+  flex: 1 1 16.6%;
+
+  min-height: 6rem;
+  margin: 6px 0;
+  padding: 0 12px;
+}
+.drawer > li > * {
+  flex-basis: 100%;
+
+  padding: 10px;
+
+  border: 1px solid #312d2a;
+  border-radius: 4px;
+  background: #ffffff;
+}
+.drawer > li > div {
+  padding: 2em;
+
+  background: #ffffff;
+}
+.drawer > .active > button {
+  color: #ffffff;
+  background: #024b7e;
+}
+.drawer > .extra {
+  flex-basis: 100%;
+
+  text-align: left;
+}
+.extra ul {
+  margin-top: 20px;
+
+  column-count: 2;
+}
+.extra li {
+  margin-bottom: 10px;
+
+  transition: all 1s;
+
+  color: #006b8f;
+}
+@media (max-width: 1024px) {
+  .drawer > li {
+    flex: 0 1 33.3%;
+  }
+}
+@media (max-width: 770px) {
+  .drawer > li {
+    flex: 0 1 50%;
+  }
+}
+@media (max-width: 450px) {
+  .drawer > li {
+    flex: 0 1 100%;
+  }
+}

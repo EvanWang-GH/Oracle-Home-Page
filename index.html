@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oracle 甲骨文中国 | 云应用和云平台</title>
+    <link href="./css/common/common.css" rel="stylesheet" />
+    <link href="./css/index/index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="wrap dp-flex fw-w">
+        <a class="logo dp-flex jc-c" href="./index.html"
+          ><img class="as-c" src="./img/header/logo.svg" alt="Oracle"
+        /></a>
+        <ul class="header-bar dp-flex jc-c as-c">
+          <li><button href="#">产品</button></li>
+          <li><button href="#">行业</button></li>
+          <li><button href="#">资源</button></li>
+          <li><button href="#">客户</button></li>
+          <li><button href="#">联系销售</button></li>
+          <li><button href="#">开发人员</button></li>
+          <li><button href="#">活动</button></li>
+        </ul>
+        <div class="tool dp-flex">
+          <button class="dp-flex">
+            <img class="as-c" src="./img/header/search.svg" alt="Search" />
+          </button>
+          <button class="dp-flex account">
+            <img class="as-c" src="./img/header/account.svg" alt="Account" />
+            <span class="as-c">查看帐户</span>
+          </button>
+          <button
+            class="dp-flex contact"
+            onclick="javascript:location.href='./p1.html'"
+          >
+            <img class="as-c" src="./img/header/contact.svg" alt="Contact" />
+            <span class="as-c">合作伙伴</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="banner pos-r">
+        <div class="background pos-a stretch">
+          <div class="bg-top pos-a stretch"></div>
+          <div class="bg-bottom pos-a stretch"></div>
+        </div>
+        <ul class="slider pos-r wrap">
+          <li class="slide dp-g jc-sb pos-a">
+            <div
+              class="pic fade pos-r"
+              style="background-image: url(./img/banner/banner-1.jpg)"
+            ></div>
+            <div class="txt">
+              <div class="fade">
+                <h2>甲骨文全球云大会邀您共襄盛举</h2>
+                <p>
+                  新一届甲骨文全球云大会将于 2022 年 10 月 17 日至 20
+                  日在美国拉斯维加斯举行，请留好时间与甲骨文全球客户和合作伙伴一起跟进云基础设施和云应用的最新进展及未来展望。
+                </p>
+                <a class="dp-ib" href="./p2.html">关注最新动态</a>
+              </div>
+            </div>
+          </li>
+          <li class="slide dp-g jc-sb pos-a">
+            <div
+              class="pic fade pos-r"
+              style="background-image: url(./img/banner/banner-2.webp)"
+            ></div>
+            <div class="txt">
+              <div class="fade">
+                <h2>OCI 通过集成威胁管理全面增强安全功能</h2>
+                <p>
+                  Oracle 云基础设施 (OCI)
+                  推出新安全服务和功能，助力客户有效保护云应用和数据免受新兴威胁。
+                </p>
+                <a class="dp-ib" href="./p2.html">阅读新闻稿</a>
+              </div>
+            </div>
+          </li>
+          <li class="slide dp-g jc-sb pos-a">
+            <div
+              class="pic fade pos-r"
+              style="background-image: url(./img/banner/banner-3.webp)"
+            ></div>
+            <div class="txt">
+              <div class="fade">
+                <h2>甲骨文公司助力美国国家卫生研究院消灭艾滋病</h2>
+                <p>
+                  甲骨文公司与美国国家卫生研究院 (NIH)
+                  下属的国家过敏与传染病研究所合作，为美国志愿参加艾滋病病毒疫苗临床试验的受试者提供简便的报名方式。
+                </p>
+                <a class="dp-ib" href="./p2.html">了解详细信息</a>
+              </div>
+            </div>
+          </li>
+          <li class="slide dp-g jc-sb pos-a">
+            <div
+              class="pic fade pos-r"
+              style="background-image: url(./img/banner/banner-4.webp)"
+            ></div>
+            <div class="txt">
+              <div class="fade">
+                <h2>试用 OCI 免费套餐</h2>
+                <p>
+                  任何人都可以使用 Oracle 云免费套餐，免费在 Oracle
+                  云上构建、测试和部署应用。您只需一次注册，就能获得两项免费服务。
+                </p>
+                <a class="dp-ib" href="./p2.html">立即开始试用</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="arrows">
+          <div class="pos-a" id="arrowLeft"></div>
+          <div class="pos-a" id="arrowRight"></div>
+        </div>
+        <ul class="pills dp-flex jc-c">
+          <li class="pill"></li>
+          <li class="pill"></li>
+          <li class="pill"></li>
+          <li class="pill"></li>
+        </ul>
+      </section>
+      <section class="panel dp-flex">
+        <div class="panel-left dp-flex jc-c pos-r">
+          <p>Oracle 云</p>
+          <h3>应用</h3>
+          <p>一套完整的云应用，可跨业务提供一致的流程和数据</p>
+        </div>
+        <div class="panel-right dp-flex jc-c pos-r">
+          <p>Oracle 云</p>
+          <h3>基础设施</h3>
+          <p>
+            用于迁移企业工作负载和构建新的云原生应用程序的自动化、安全平台浏览
+          </p>
+        </div>
+      </section>
+      <section class="news">
+        <h1 class="ta-c">最新动态</h1>
+        <ul class="dp-flex wrap">
+          <li class="dp-flex">
+            <h2>乘风破浪，尽显“她”力量</h2>
+            <div class="dp-flex jc-sb">
+              <p>
+                CJ Perez 是竞技帆船赛史上首位拉丁裔冠军。在 SailGP
+                国际帆船大奖赛中，她借助 Oracle 云基础设施 (OCI)
+                提升团队的整体表现。
+              </p>
+              <img src="./img/news/news-1.webp" alt="新闻1" />
+              <a href="#">深入了解 SailGP 案例</a>
+            </div>
+          </li>
+          <li class="dp-flex">
+            <h2>Verizon 将 5G 超宽带的强大功能引入 Oracle 行业实验室</h2>
+            <div class="dp-flex jc-sb">
+              <p>
+                客户和合作伙伴可以通过 Verizon 5G
+                超快的速度、巨大的容量和低延迟来应对相关行业的艰难挑战。
+              </p>
+              <img src="./img/news/news-2.webp" alt="新闻2" />
+              <a href="#">阅读新闻稿</a>
+            </div>
+          </li>
+          <li class="dp-flex">
+            <h2>行业专家称 MySQL HeatWave 是“变革利器”</h2>
+            <div class="dp-flex jc-sb">
+              <p>
+                Oracle MySQL HeatWave
+                推出后，行业专家认为开发人员能够凭借其优势，以简单、快速且经济的方式为
+                MySQL 应用添加机器学习功能。
+              </p>
+              <img src="./img/news/news-3.webp" alt="新闻1" />
+              <a href="#">聆听专家的评价</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="nav">
+        <h2 class="title">全面的企业云，专为企业现代化而设</h2>
+        <div class="intro">
+          <div class="dp-flex jc-sb ai-c">
+            <h3>云应用</h3>
+            <a href="#">了解云应用</a>
+          </div>
+          <p>
+            Oracle
+            集成式应用套件内置人工智能，可以打通您的关键业务流程，提供一致的用户体验，助您完成更多工作。
+          </p>
+        </div>
+        <ul class="drawer fw-w dp-flex ta-c">
+          <li class="dp-flex">
+            <button class="dp-flex ai-c jc-c">企业资源计划</button>
+          </li>
+          <li class="dp-flex">
+            <button class="dp-flex ai-c jc-c">供应链管理</button>
+          </li>
+          <li class="dp-flex">
+            <button class="dp-flex ai-c jc-c">人力资本管理</button>
+          </li>
+          <li class="dp-flex">
+            <button class="dp-flex ai-c jc-c">客户体验</button>
+          </li>
+          <li class="dp-flex">
+            <button class="dp-flex ai-c jc-c">行业应用</button>
+          </li>
+          <li class="dp-flex">
+            <button class="dp-flex ai-c jc-c">ISV 应用和自定义应用</button>
+          </li>
+          <li class="extra dp-none">
+            <div>
+              <h3>企业资源计划 (ERP) Oracle Fusion ERP</h3>
+              <p>
+                云解决方案采用人工智能技术构建，能够满足企业的未来发展需求，跟上变革的步伐。
+              </p>
+              <ul>
+                <li>财务</li>
+                <li>项目管理</li>
+                <li>采购</li>
+                <li>风险管理和合规性</li>
+                <li>企业绩效管理</li>
+                <li>供应链和制造</li>
+                <li>ERP 分析</li>
+              </ul>
+            </div>
+          </li>
+          <li class="extra dp-none">
+            <div>
+              <h3>供应链管理 (SCM)</h3>
+              <p>
+                Oracle Fusion SCM
+                云将供应网络与旨在超越变化的集成业务应用程序套件连接起来。
+              </p>
+              <ul>
+                <li>供应链计划</li>
+                <li>库存管理</li>
+                <li>制造</li>
+                <li>维护</li>
+                <li>订单管理</li>
+                <li>物流</li>
+                <li>产品生命周期管理 (PLM)</li>
+                <li>采购</li>
+                <li>区块链</li>
+                <li>物联网</li>
+                <li>跟踪</li>
+              </ul>
+            </div>
+          </li>
+          <li class="extra dp-none">
+            <div>
+              <h3>人力资本管理 (HCM)</h3>
+              <p>
+                Oracle Fusion HCM 云是一个完整的云原生 HR
+                解决方案，可以连接从招聘到退休的每个人力资源流程。
+              </p>
+              <ul>
+                <li>人力资源</li>
+                <li>人才管理</li>
+                <li>学习</li>
+                <li>招聘</li>
+                <li>员工管理</li>
+                <li>算薪</li>
+                <li>HR 分析</li>
+              </ul>
+            </div>
+          </li>
+          <li class="extra dp-none">
+            <div>
+              <h3>客户体验 (CX)</h3>
+              <p>
+                Oracle 客户体验提供超越传统 CRM
+                的互联套件，助您创建、管理、服务和培养持久的客户关系。
+              </p>
+              <ul>
+                <li>广告</li>
+                <li>营销</li>
+                <li>销售</li>
+                <li>商务</li>
+                <li>服务</li>
+                <li>客户体验平台</li>
+              </ul>
+            </div>
+          </li>
+          <li class="extra dp-none">
+            <div>
+              <h3>行业应用</h3>
+              <p>
+                Oracle
+                行业云解决方案经过专门构建，您可以基于深厚的专业知识全面构建、运行和扩展您的业务。
+              </p>
+              <ul>
+                <li>汽车</li>
+                <li>通信</li>
+                <li>建筑与工程</li>
+                <li>消费品</li>
+                <li>能源和水资源</li>
+                <li>金融服务</li>
+                <li>餐饮</li>
+                <li>政府和教育</li>
+                <li>医疗卫生</li>
+                <li>高科技</li>
+                <li>酒店管理</li>
+                <li>工业制造</li>
+                <li>生命科学</li>
+                <li>媒体和娱乐</li>
+                <li>石油和天然气</li>
+                <li>专业服务</li>
+                <li>零售</li>
+                <li>交通和运输</li>
+              </ul>
+            </div>
+          </li>
+          <li class="extra dp-none">
+            <div>
+              <h3>ISV 应用和定制应用</h3>
+              <p>
+                Oracle 云基础设施 (OCI)
+                提供安全、可扩展和可靠的云服务来托管任何定制应用或 ISV 应用。
+              </p>
+              <ul>
+                <li>Oracle ISV</li>
+                <li>将 ISV 应用迁移到 OCI</li>
+                <li>ISV Accelerator</li>
+                <li>Oracle Partner Network</li>
+                <li>将定制应用迁移到 OCI</li>
+                <li>云迁移计划</li>
+                <li>Oracle 应用开发</li>
+                <li>Oracle 开发人员资源中心</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="tab">
+        <div class="wrap">
+          <h3>了解为什么 40 多万客户信任 Oracle</h3>
+          <ul class="tab-title dp-flex">
+            <li class="active dp-flex">
+              <img src="./img/tab/tab-1.svg" alt="客户" />
+            </li>
+            <li class="dp-flex">
+              <img src="./img/tab/tab-2.svg" alt="客户" />
+            </li>
+            <li class="dp-flex">
+              <img src="./img/tab/tab-3.svg" alt="客户" />
+            </li>
+            <li class="dp-flex">
+              <img src="./img/tab/tab-4.svg" alt="客户" />
+            </li>
+            <li class="dp-flex">
+              <img src="./img/tab/tab-5.svg" alt="客户" />
+            </li>
+            <li class="dp-flex">
+              <img src="./img/tab/tab-6.png" alt="客户" />
+            </li>
+          </ul>
+        </div>
+        <ul class="tab-content pos-r">
+          <li
+            class="active pos-a dp-flex ai-c"
+            style="background-image: url(./img/tab/bg-1.webp)"
+          >
+            <div class="info">
+              <h2>高科技</h2>
+              <b>
+                益博睿 (Experian) 将关键数据和工具迁移到 Oracle 云基础设施
+                (OCI)，性能提升了 40%，而成本降低了 60%。
+              </b>
+            </div>
+          </li>
+          <li
+            class="pos-a dp-flex ai-c"
+            style="background-image: url(./img/tab/bg-2.webp)"
+          >
+            <div class="info">
+              <h2>运输</h2>
+              <b>
+                联邦快递 (FedEx) 使用 Oracle ERP 云、EPM 云、SCM 云以及 Oracle
+                分析实时响应业务挑战，更好地推动有机增长和并购增长。
+              </b>
+            </div>
+          </li>
+          <li
+            class="pos-a dp-flex ai-c"
+            style="background-image: url(./img/tab/bg-3.webp)"
+          >
+            <div class="info">
+              <h2>餐饮</h2>
+              <b>
+                荷美尔食品公司 (Hormel Foods) 借助 Oracle EPM 云、ERP 云和 HCM
+                云连通并对各个核心系统进行现代化改造，最终提高了绩效。
+              </b>
+            </div>
+          </li>
+          <li
+            class="pos-a dp-flex ai-c"
+            style="background-image: url(./img/tab/bg-4.webp)"
+          >
+            <div class="info">
+              <h2>制造</h2>
+              <b>
+                全球大型建筑技术、软件和服务解决方案供应商江森自控 (Johnson
+                Controls) 选择使用 Oracle 解决方案来提升客户体验和品牌知名度。
+              </b>
+            </div>
+          </li>
+          <li
+            class="pos-a dp-flex ai-c"
+            style="background-image: url(./img/tab/bg-5.jpg)"
+          >
+            <div class="info">
+              <b>
+                Siemens Mobility
+                使用自治事务处理服务来整合各个来源的数据，为项目经理提供准确的实时信息，从而将成本降低高达
+                90% 并缩短项目上市时间。
+              </b>
+            </div>
+          </li>
+          <li
+            class="pos-a dp-flex ai-c"
+            style="background-image: url(./img/tab/bg-6.webp)"
+          >
+            <div class="info">
+              <h2>汽车</h2>
+              <b>
+                全球汽车制造龙头企业丰田汽车 (Toyota Motor)
+                将高性能计算工作负载迁移到 Oracle 云基础设施
+                (OCI)，提高了汽车设计和开发效率。
+              </b>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap">
+        <ul class="dp-flex jc-c">
+          <li>© 2022 Oracle</li>
+          <li>站点地图</li>
+          <li>使用条款和隐私政策</li>
+          <li>京ICP备10049020号-1</li>
+          <li>Cookie 喜好设置</li>
+          <li>广告选择</li>
+          <li><a href="./p3.html">招贤纳士</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./script/jquery.js"></script>
+    <script src="./script/index/banner.js"></script>
+    <script src="./script/index/nav.js"></script>
+    <script src="./script/index/tab.js"></script>
+  </body>
+</html>

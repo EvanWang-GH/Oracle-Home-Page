@@ -1,0 +1,144 @@
+/* banner start */
+.banner {
+  position: relative;
+
+  min-height: 480px;
+}
+.background {
+  z-index: -1;
+
+  background: #e5e5e5;
+}
+.background > div {
+  height: 100%;
+
+  background-repeat: no-repeat;
+}
+.bg-top {
+  background-image: url(../../img/banner/bg-top.webp);
+  background-position: top left;
+  background-size: 88% 374px;
+}
+.bg-bottom {
+  background-image: url(../../img/banner/bg-bottom.webp);
+  background-position: bottom left;
+  background-size: 100% 374px;
+}
+.slide {
+  z-index: 0;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  padding: 18px 25px 0;
+
+  grid-template-columns: repeat(12, 6.5%);
+  grid-template-rows: 16px [row-start] 1fr;
+}
+.banner-active {
+  position: relative;
+  z-index: 1;
+}
+.fade {
+  opacity: 0;
+}
+.pic {
+  z-index: -1;
+  left: 50px;
+
+  max-width: 775px;
+  height: 372px;
+
+  background-size: cover;
+
+  grid-column: 2 / span 7;
+}
+.txt {
+  max-width: 588px;
+  height: 372px;
+  padding: 48px;
+
+  background-color: #ffffff;
+
+  grid-column: 6 / span 6;
+}
+.txt h2 {
+  font-size: 28px;
+  font-weight: normal;
+}
+.txt h2::after {
+  display: block;
+
+  width: 40px;
+  height: 4px;
+  margin: 16px 0;
+
+  content: "";
+
+  background: #c74634;
+}
+.txt p {
+  margin-bottom: 24px;
+}
+.txt a {
+  padding: 10px 13px;
+
+  color: #ffffff;
+  border-radius: 4px;
+  background: #312d2a;
+}
+.arrows > div {
+  z-index: 1;
+  top: 50%;
+
+  width: 26px;
+  height: 26px;
+
+  border: 4px solid #3a3631;
+  border-right: none;
+  border-bottom: none;
+}
+#arrowLeft {
+  left: 20px;
+
+  transform: rotate(-45deg);
+}
+#arrowRight {
+  right: 20px;
+
+  transform: rotate(135deg);
+}
+.pills {
+  position: relative;
+  top: 50px;
+}
+.pill {
+  width: 72px;
+  height: 6px;
+  margin: 0 9px;
+
+  transition: all 1s;
+
+  border: 1px solid #3a3631;
+  border-radius: 4px;
+}
+.pill:hover {
+  background: #ffffff;
+}
+.pill-active {
+  background: #3a3631;
+}
+@media (max-width: 768px) {
+  .pic,
+  .txt {
+    grid-column: 1 / span 12;
+  }
+  .txt {
+    max-width: unset;
+    grid-row-start: 3;
+  }
+  .slide {
+    grid-auto-rows: 1fr;
+  }
+}
+/* banner end */

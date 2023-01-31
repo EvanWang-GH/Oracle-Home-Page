@@ -1,0 +1,54 @@
+.panel {
+  flex-wrap: wrap;
+}
+.panel > div {
+  flex-flow: column;
+
+  flex: 0 0 50%;
+  min-height: 37rem;
+  padding: 100px;
+
+  color: #ffffff;
+  background-size: cover;
+}
+.panel-left {
+  text-align: right;
+
+  background: url(../../img/panel/panel-l.jpg);
+}
+.panel-right {
+  background: url(../../img/panel/panel-r.jpg);
+}
+.panel .dp-flex {
+  flex-flow: column;
+}
+.panel p {
+  font-size: 20px;
+}
+.panel h3 {
+  font-size: 25px;
+}
+.panel a {
+  bottom: 50px;
+
+  padding: 1.2rem 1.6rem;
+
+  color: #161513;
+  border-radius: 4px;
+  background: #ffffff;
+}
+.panel-left a {
+  right: 100px;
+}
+.panel-right a {
+  left: 100px;
+}
+@media (max-width: 1024px) {
+  .panel > div {
+    flex: 0 0 100%;
+    text-align: left;
+  }
+  .panel a {
+    right: unset;
+  }
+}

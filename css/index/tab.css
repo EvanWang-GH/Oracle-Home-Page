@@ -1,0 +1,84 @@
+.tab {
+  padding-top: 120px;
+}
+.tab h3 {
+  font-size: 3.6rem;
+  font-weight: normal;
+}
+.tab-title {
+  margin-bottom: 10px;
+}
+.tab-title > li {
+  flex: 1 0 16.6%;
+
+  padding: 20px;
+
+  border-bottom: 3px solid #eeeeee;
+}
+.tab-title > li.active,
+.tab-title > li:hover {
+  border-bottom-color: rgb(2, 75, 126);
+}
+.tab-title > li > img {
+  width: 100%;
+}
+.tab-content > li {
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  min-height: 540px;
+  padding: 24px;
+
+  transition: all 1s;
+
+  opacity: 0;
+  background-position: center;
+  background-size: cover;
+}
+.tab-content > li.active {
+  position: relative;
+  z-index: 1;
+
+  opacity: 1;
+}
+.tab-content .info {
+  height: min-content;
+  max-width: 665px;
+  padding: 48px;
+
+  background: #ffffff;
+  margin-left: 0;
+}
+.info > h2 {
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+.info > b {
+  font-size: 3rem;
+}
+@media (max-width: 1024px) {
+  .tab .wrap {
+    padding: 0 24px;
+  }
+  .tab-content > li {
+    align-items: end;
+  }
+  .tab-content .info {
+    max-width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  .tab-title {
+    flex-wrap: wrap;
+  }
+  .tab-title > li {
+    flex-basis: 33.3%;
+  }
+  .tab-content .info {
+    max-width: 100%;
+  }
+  .info > b {
+    font-size: 2rem;
+  }
+}

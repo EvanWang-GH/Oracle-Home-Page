@@ -1,0 +1,85 @@
+@import url(./header.css);
+@import url(./footer.css);
+/* reset start */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  user-select: none;
+}
+html {
+  font-size: 10px;
+
+  color: #161513;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+
+  color: unset;
+}
+button {
+  font-size: 16px;
+
+  cursor: pointer;
+
+  border: none;
+  background: transparent;
+}
+/* reset end */
+/* common start */
+.pos-r {
+  position: relative;
+}
+.pos-a {
+  position: absolute;
+}
+.stretch {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.wrap {
+  overflow: hidden;
+
+  max-width: 1344px;
+  margin: auto;
+}
+.dp-flex {
+  display: flex;
+}
+.dp-g {
+  display: grid;
+}
+.dp-ib {
+  display: inline-block;
+}
+.dp-none {
+  display: none;
+}
+.fd-c {
+  flex-direction: column;
+}
+.fw-w {
+  flex-wrap: wrap;
+}
+.jc-c {
+  justify-content: center;
+}
+.jc-sb {
+  justify-content: space-between;
+}
+.ai-c {
+  align-items: center;
+}
+.as-c {
+  align-self: center;
+}
+.ta-c {
+  text-align: center;
+}
+/* common end */

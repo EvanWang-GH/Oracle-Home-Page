@@ -1,0 +1,67 @@
+/* header start */
+header {
+  position: sticky;
+  z-index: 11;
+  top: 0;
+
+  background: #3a3632;
+}
+.logo {
+  height: 44px;
+  padding: 8px 0;
+}
+header > .wrap {
+  padding: 8px 24px;
+}
+.header-bar {
+  padding: 0;
+  flex-grow: 1;
+  margin-bottom: 0;
+}
+.header-bar button {
+  margin-right: 16px;
+  color: white;
+  font-size: 16px;
+}
+.tool {
+  height: 44px;
+}
+.tool > button {
+  font-size: 16px;
+  padding-right: 20px;
+
+  color: white;
+  border-radius: 4px;
+}
+.tool > button > img {
+  margin: 0 10px;
+}
+.account {
+  background: #161513;
+}
+.contact {
+  margin-left: 10px;
+
+  border: 1px solid white;
+}
+@media (max-width: 1024px) {
+  header .header-bar {
+    order: 2;
+    flex: 0 0 100%;
+    justify-content: start;
+    margin-top: 10px;
+  }
+  .tool {
+    margin-left: auto;
+  }
+}
+@media (max-width: 768px) {
+  header .header-bar {
+    display: none;
+  }
+  .tool > button {
+    font-size: 0;
+    padding: 0;
+  }
+}
+/* header end */
